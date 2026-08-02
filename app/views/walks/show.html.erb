@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @walk %>
+
+<div>
+  <%= link_to "Edit this walk", edit_walk_path(@walk) %> |
+  <%= link_to "Back to walks", walks_path %>
+
+  <%= button_to "Destroy this walk", @walk, method: :delete %>
+</div>

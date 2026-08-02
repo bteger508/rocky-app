@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Walks" %>
+
+<h1>Walks</h1>
+
+<div id="walks">
+  <% @walks.each do |walk| %>
+    <%= render walk %>
+    <p>
+      <%= link_to "Show this walk", walk %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New walk", new_walk_path %>
